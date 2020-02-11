@@ -1,0 +1,13 @@
+.app-header{
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.app-header img {
+    width: 100px;
+    height: 80px;
+}
+
+.app-header .user-score {
+    font-size: 24px;
+}
