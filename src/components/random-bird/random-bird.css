@@ -1,0 +1,14 @@
+.random-bird {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(91, 91, 91);
+    border-radius: 15px;
+    padding: .5rem;
+
+}
+
+.random-bird img {
+    border-radius: 15px;
+    width: 190px;
+    height: 190px;
+}

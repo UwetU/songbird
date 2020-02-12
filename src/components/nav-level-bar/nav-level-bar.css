@@ -1,6 +1,7 @@
 .nav-level-bar{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     background: rgb(3, 66, 3);
     margin: .5rem 0;

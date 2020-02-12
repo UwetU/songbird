@@ -1,3 +1,9 @@
 .wrapper{
     padding: .5rem 3rem;
 }
+
+.wrapper .info-and-answer-birds{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

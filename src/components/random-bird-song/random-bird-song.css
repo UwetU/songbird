@@ -1,0 +1,17 @@
+.random-bird-song{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    padding: .5rem;
+    padding-bottom: 0;
+}
+
+.random-bird-song .name-song-bird{
+    font-size: 2.5rem;
+    border-bottom: 2px solid grey;
+}
+
+.random-bird-song audio {
+    width: 100%;
+}
