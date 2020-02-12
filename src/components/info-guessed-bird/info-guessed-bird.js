@@ -13,7 +13,7 @@ const InfoGuessedBird = ({ birdName, birdNameLat, urlSong, urlImage, infoBird })
                     <audio controls src={urlSong}></audio>
                 </div>
             </div>
-            <p>{infoBird}</p>
+            <p className="info-bird-item">{infoBird}</p>
         </div>
     );
 };

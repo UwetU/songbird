@@ -4,14 +4,16 @@ import AnswerOptionsBirdsItem from '../answer-options-birds-item';
 
 import './answer-options-birds.css';
 
-const AnswerOptionsBirds = ({ birdsData }) => {
+const AnswerOptionsBirds = ({ birdsData, selectBirds }) => {
     const elements = birdsData.map((item) => {
         const { id, name } = item;
 
         return (
-            <li key={id} className="answer-options-birds-li list-group-item">
+            <li key={id}
+                className="answer-options-birds-li list-group-item"
+                onClick={() => selectBirds(birdsData, id)}>
                 <AnswerOptionsBirdsItem name={name} />
-            </li>
+            </li >
         );
     });
 

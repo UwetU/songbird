@@ -2,7 +2,14 @@
     margin: .5rem 0;
     flex-grow: 1;
     border-radius: 15px;
+    margin-right: 5px;
 }
+
+@media screen and (max-width: 768px) {
+    .answer-options-birds {
+        margin-right: 0;
+    }
+  }
 
 .list-group-item{
     background: rgb(91, 91, 91);
