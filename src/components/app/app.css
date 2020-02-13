@@ -3,7 +3,17 @@
 }
 
 .wrapper .info-and-answer-birds{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
+
+@media screen and (max-width: 768px) {
+    .wrapper{
+        padding: .5rem;
+    }
+    .wrapper .info-and-answer-birds{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+  }
