@@ -21,7 +21,8 @@ export default class App extends Component {
         species: '******',
         description: '',
         image: '/assets/none-bird.png',
-        audio: ''
+        audio: '',
+        score: 0
     }
 
     correctAnswer = Math.floor(Math.random() * this.currentBirdData.length);
@@ -42,9 +43,6 @@ export default class App extends Component {
 
     render() {
 
-        //console.log(this.correctAnswer);
-        //console.log(this.correctAudio);
-
         const { image, audio, name, species, description } = this.state;
 
         const birdLevelData = [
@@ -58,7 +56,7 @@ export default class App extends Component {
 
         return (
             <div className="wrapper">
-                <AppHeader score={0} />
+                <AppHeader score={this.state.score} />
                 <NavLevelBar label={birdLevelData} />
                 <RandomBird url={this.correctImg} name={this.correctName} audio={this.correctAudio} />
                 <div className="info-and-answer-birds">
